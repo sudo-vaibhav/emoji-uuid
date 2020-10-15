@@ -1,6 +1,6 @@
 {
     "name": "emoji-uuid",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
     },
@@ -9,7 +9,7 @@
     "types": "lib/index.d.ts",
     "scripts": {
         "build": "rimraf ./lib && tsc",
-        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "format": "prettier --write \"src/**/*.ts\"",
         "lint": "eslint  . --ext .ts",
         "test": "jest --config jestconfig.json",
         "prepare": "npm run build",
