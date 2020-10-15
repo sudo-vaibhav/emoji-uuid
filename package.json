@@ -1,6 +1,9 @@
 {
     "name": "emoji-uuid",
     "version": "1.0.0",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "description": "A simple uuid to emoji encoder and decoder",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
