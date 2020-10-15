@@ -1,0 +1,52 @@
+{
+    "name": "emoji-uuid",
+    "version": "1.0.0",
+    "description": "A simple uuid to emoji encoder and decoder",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "build": "rimraf ./lib && tsc",
+        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "lint": "eslint  . --ext .ts",
+        "test": "jest --config jestconfig.json",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm run test && npm run lint",
+        "preversion": "npm run lint",
+        "version": "npm run format && git add -A src",
+        "postversion": "git push && git push --tags"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sudo-vaibhav/emoji-uuid.git"
+    },
+    "keywords": [
+        "uuid",
+        "emojis",
+        "encoding",
+        "identifier",
+        "decoding"
+    ],
+    "author": "Vaibhav Chopra",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sudo-vaibhav/emoji-uuid/issues"
+    },
+    "homepage": "https://github.com/sudo-vaibhav/emoji-uuid#readme",
+    "devDependencies": {
+        "@types/jest": "^26.0.14",
+        "@typescript-eslint/eslint-plugin": "^4.4.1",
+        "@typescript-eslint/parser": "^4.4.1",
+        "eslint": "^7.11.0",
+        "eslint-config-prettier": "^6.12.0",
+        "eslint-plugin-no-loops": "^0.3.0",
+        "jest": "^26.5.3",
+        "prettier": "^2.1.2",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^26.4.1",
+        "typescript": "^4.0.3",
+        "typescript-eslint": "0.0.1-alpha.0"
+    },
+    "files": [
+        "lib/**/*"
+    ]
+}
