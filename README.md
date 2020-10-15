@@ -16,4 +16,4 @@ console.log(decode('🤐🤐😚🥰🍑😘😝😍🤫🍑😗😍🤭😍'));
 
 ## Demo
 
-you can also try the this utility without having to install it by accessing a NodeJS API at <a href="https://emoji-uuid.azurewebsites.net/"> instructions to use this API can be found at <a href="https://github.com/sudo-vaibhav/emoji-uuid-api">
+you can also try the this utility without having to install it by accessing a NodeJS API <a href="https://emoji-uuid.azurewebsites.net/">here</a> Instructions to use this API can be found at <a href="https://github.com/sudo-vaibhav/emoji-uuid-api">https://github.com/sudo-vaibhav/emoji-uuid-api</a>
